@@ -8,21 +8,25 @@
   </head>
   <body>
     <h1 class="title">UK Breaking News App</h1>
+    <p class="subTitle">Powered by Saurav Kanchan News API</p>
 
      <button id="clearPageBtn" class="clearPageBtn">Clear Page</button>
 
     <form>
-      <input
-        type="text"
-        class="searchInput"
-        id="searchInput"
-        placeholder="Select News Category"
-      />
+      <select name="searchInput" id="searchInput" class="searchInput">
+        <option value="business"> Business</option>
+        <option value="entertainment"><Embed></Embed>Entertainment</option>
+        <option value="general">General</option>
+        <option value="health">Health</option>
+        <option value="science">Science</option>
+        <option value="sports">Sports</option>
+        <option value="technology">Technology</option>
+      </select>
     
-      <button class="searchBtn" id="searchBtn">Search</button>
+      <button class="searchBtn" id="searchBtn">Submit</button>
     </form>
 
-    <p class="searchTypes">Common Search Categories:  business, entertainment, general, health, science, sports, technology</p>
+    <p class="searchTypes">Select category from drop down and submit, further submits  will attach new category to bottom of page. To bring new search to top of page, clear page between submits </p>
 
 
     <div class="searchResult" id="searchResult">

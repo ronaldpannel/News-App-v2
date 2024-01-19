@@ -14,6 +14,9 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 40px;
+}
+.subTitle{
+  text-align: center;
   margin-bottom: 20px;
 }
 form {
@@ -25,7 +28,7 @@ form {
   cursor: pointer;
 }
 .searchInput {
-  width: 60%;
+  width: 40%;
   max-width: 400px;
   padding: 10px 20px;
   border: none;
@@ -33,6 +36,12 @@ form {
   box-shadow: 0 05px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.searchInput:hover{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .searchBtn {
   padding: 10px 20px;
@@ -52,6 +61,8 @@ form {
   color: black;
   text-align: center;
   font-size: 1.3rem;
+  margin: 0 20px;
+
 }
 .searchResult {
   display: flex;
